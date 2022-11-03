@@ -1,7 +1,8 @@
-import Table from "../table/Table";
-import TopBar from "../topbar/TopBar";
 import style from "./Container.module.css";
 import { useState } from "react";
+import Table from "../table/Table";
+import TopBar from "../topbar/TopBar";
+import Chart from "../chart/Chart";
 
 function Container() {
   const [country, setCountry] = useState("usa");
@@ -24,6 +25,7 @@ function Container() {
         onRoleSelection={handleRoleSelection}
       />
       <Table country={country} role={role} />
+      <Chart role={role} />
     </div>
   );
 }

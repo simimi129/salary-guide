@@ -15,7 +15,6 @@ function TopBar(props) {
       });
     }
     setSelectableCountriesData(tmp);
-    console.log(selectableCountriesData);
   }, []);
 
   return (

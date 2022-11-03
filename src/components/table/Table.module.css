@@ -1,7 +1,10 @@
 .table {
+  display: flex;
+  flex-direction: column;
   background: #fafafa;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid #bbb;
   overflow: scroll;
   position: relative;
+  height: 300px;
 }
