@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  background-color: #fafafa;
+  border-top: 1px solid #bbb;
+  padding: 20px;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 10px 20px 0 #000;
+}
+
+.item {
+  width: 24%;
+  color: var(--color-money);
+  font-weight: 700;
+}
+
+.placeholder {
+  flex-grow: 1;
+}

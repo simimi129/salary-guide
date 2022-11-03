@@ -1,0 +1,16 @@
+.row {
+  display: flex;
+  padding: 20px;
+}
+
+.row:nth-child(odd) {
+  background-color: #eee;
+}
+
+.col {
+  width: 24%;
+}
+
+.title {
+  flex-grow: 1;
+}

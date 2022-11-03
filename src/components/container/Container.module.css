@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  max-height: 680px;
+  width: 90%;
+  height: 90%;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #bbb;
+  box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.56), inset 0 0 0 1px #e0e0e0;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px) saturate(100%) contrast(100%) brightness(90%);
+  -webkit-backdrop-filter: blur(30px) saturate(100%) contrast(100%)
+    brightness(90%);
+}
