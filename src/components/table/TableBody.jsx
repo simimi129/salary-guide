@@ -6,7 +6,7 @@ function TableBody({ country, role }) {
   const [currentData, setCurrentData] = useState([]);
 
   useEffect(() => {
-    const tmpData = data[country][role];
+    const tmpData = data.find((d) => d.optionValue === country)[role];
     setCurrentData(tmpData);
   }, [country, role]);
 

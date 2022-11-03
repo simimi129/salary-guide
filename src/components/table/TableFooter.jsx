@@ -16,9 +16,9 @@ function TableFooter({ country, role }) {
   const [max, setMax] = useState(0);
 
   useEffect(() => {
-    setMin(calcAvg("min", data[country][role]));
-    setMed(calcAvg("med", data[country][role]));
-    setMax(calcAvg("max", data[country][role]));
+    setMin(calcAvg("min", data.find((d) => d.optionValue === country)[role]));
+    setMed(calcAvg("med", data.find((d) => d.optionValue === country)[role]));
+    setMax(calcAvg("max", data.find((d) => d.optionValue === country)[role]));
   }, [country, role]);
 
   return (

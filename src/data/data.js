@@ -1,5 +1,8 @@
-export const data = {
-  usa: {
+export const data = [
+  {
+    id: 1,
+    name: "🇺🇸 USA",
+    optionValue: "usa",
     frontend: [
       {
         id: 1,
@@ -89,7 +92,10 @@ export const data = {
       },
     ],
   },
-  switzerland: {
+  {
+    id: 2,
+    name: "🇨🇭 Switzerland",
+    optionValue: "switzerland",
     frontend: [
       {
         id: 1,
@@ -141,7 +147,6 @@ export const data = {
         max: 121750,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -187,7 +192,10 @@ export const data = {
       },
     ],
   },
-  austria: {
+  {
+    id: 3,
+    name: "🇦🇹 Austria",
+    optionValue: "austria",
     frontend: [
       {
         id: 1,
@@ -211,7 +219,6 @@ export const data = {
         max: 60000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -236,7 +243,10 @@ export const data = {
       },
     ],
   },
-  germany: {
+  {
+    id: 4,
+    name: "🇩🇪 Germany",
+    optionValue: "germany",
     frontend: [
       {
         id: 1,
@@ -267,7 +277,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -299,7 +308,10 @@ export const data = {
       },
     ],
   },
-  denmark: {
+  {
+    id: 5,
+    name: "🇩🇰 Denmark",
+    optionValue: "denmark",
     frontend: [
       {
         id: 1,
@@ -330,7 +342,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -362,7 +373,10 @@ export const data = {
       },
     ],
   },
-  netherlands: {
+  {
+    id: 6,
+    name: "🇳🇱 Netherlands",
+    optionValue: "netherlands",
     frontend: [
       {
         id: 1,
@@ -393,7 +407,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -425,7 +438,10 @@ export const data = {
       },
     ],
   },
-  norway: {
+  {
+    id: 7,
+    name: "🇳🇴 Norway",
+    optionValue: "norway",
     frontend: [
       {
         id: 1,
@@ -456,7 +472,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -488,7 +503,10 @@ export const data = {
       },
     ],
   },
-  sweden: {
+  {
+    id: 8,
+    name: "🇸🇪 Sweden",
+    optionValue: "sweden",
     frontend: [
       {
         id: 1,
@@ -519,7 +537,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -551,7 +568,10 @@ export const data = {
       },
     ],
   },
-  finland: {
+  {
+    id: 9,
+    name: "🇫🇮 Finland",
+    optionValue: "finland",
     frontend: [
       {
         id: 1,
@@ -582,7 +602,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -614,7 +633,10 @@ export const data = {
       },
     ],
   },
-  ireland: {
+  {
+    id: 10,
+    name: "🇮🇪 Ireland",
+    optionValue: "ireland",
     frontend: [
       {
         id: 1,
@@ -645,7 +667,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -677,7 +698,10 @@ export const data = {
       },
     ],
   },
-  luxembourg: {
+  {
+    id: 11,
+    name: "🇱🇺 Luxembourg",
+    optionValue: "luxembourg",
     frontend: [
       {
         id: 1,
@@ -708,7 +732,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -740,7 +763,10 @@ export const data = {
       },
     ],
   },
-  belgium: {
+  {
+    id: 12,
+    name: "🇧🇪 Belgium",
+    optionValue: "belgium",
     frontend: [
       {
         id: 1,
@@ -771,7 +797,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -803,7 +828,10 @@ export const data = {
       },
     ],
   },
-  france: {
+  {
+    id: 13,
+    name: "🇫🇷 France",
+    optionValue: "france",
     frontend: [
       {
         id: 1,
@@ -834,7 +862,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -866,7 +893,10 @@ export const data = {
       },
     ],
   },
-  italy: {
+  {
+    id: 14,
+    name: "🇮🇹 Italy",
+    optionValue: "italy",
     frontend: [
       {
         id: 1,
@@ -897,7 +927,6 @@ export const data = {
         max: 140000,
       },
     ],
-
     ios: [
       {
         id: 1,
@@ -929,67 +958,4 @@ export const data = {
       },
     ],
   },
-  hungary: {
-    frontend: [
-      {
-        id: 1,
-        title: "salary.com",
-        min: 95722,
-        med: 119224,
-        max: 139970,
-      },
-      {
-        id: 2,
-        title: "glassdoor.com",
-        min: 55000,
-        med: 84942,
-        max: 132000,
-      },
-      {
-        id: 3,
-        title: "payscale.com",
-        min: 51000,
-        med: 78181,
-        max: 119000,
-      },
-      {
-        id: 4,
-        title: "talent.com",
-        min: 84620,
-        med: 105113,
-        max: 140000,
-      },
-    ],
-
-    ios: [
-      {
-        id: 1,
-        title: "salary.com",
-        min: 95722,
-        med: 119224,
-        max: 139970,
-      },
-      {
-        id: 2,
-        title: "glassdoor.com",
-        min: 55000,
-        med: 84942,
-        max: 132000,
-      },
-      {
-        id: 3,
-        title: "payscale.com",
-        min: 51000,
-        med: 78181,
-        max: 119000,
-      },
-      {
-        id: 4,
-        title: "talent.com",
-        min: 84620,
-        med: 105113,
-        max: 140000,
-      },
-    ],
-  },
-};
+];

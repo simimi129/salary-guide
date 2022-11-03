@@ -1,25 +1,32 @@
 import style from "./TopBar.module.css";
+import { data } from "../../data/data";
+import { useEffect, useState } from "react";
 
 function TopBar(props) {
+  const [selectableCountriesData, setSelectableCountriesData] = useState([]);
+
+  useEffect(() => {
+    let tmp = [];
+    for (const country of data) {
+      tmp.push({
+        id: country.id,
+        optionValue: country.optionValue,
+        name: country.name,
+      });
+    }
+    setSelectableCountriesData(tmp);
+    console.log(selectableCountriesData);
+  }, []);
+
   return (
     <div className={style.topbar}>
       <h1 className={style.h1}>Salary Guide</h1>
       <select className={style.select} onChange={props.onCountrySelection}>
-        <option value="usa">🇺🇸 USA</option>
-        <option value="switzerland">🇨🇭 Switzerland</option>
-        <option value="austria">🇦🇹 Austria</option>
-        <option value="germany">🇩🇪 Germany</option>
-        <option value="denmark">🇩🇰 Denmark</option>
-        <option value="netherlands">🇳🇱 Netherlands</option>
-        <option value="norway">🇳🇴 Norway</option>
-        <option value="sweden">🇸🇪 Sweden</option>
-        <option value="finland">🇫🇮 Finland</option>
-        <option value="ireland">🇮🇪 Ireland</option>
-        <option value="luxembourg">🇱🇺 Luxembourg</option>
-        <option value="belgium">🇧🇪 Belgium</option>
-        <option value="france">🇫🇷 France</option>
-        <option value="italy">🇮🇹 Italy</option>
-        <option value="hungary">🇭🇺 Hungary</option>
+        {selectableCountriesData.map((country) => (
+          <option value={country.optionValue} key={country.id}>
+            {country.name}
+          </option>
+        ))}
       </select>
       <select className={style.select} onChange={props.onRoleSelection}>
         <option value="frontend">Frontend</option>
