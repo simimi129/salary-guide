@@ -25,7 +25,7 @@ function Container() {
         onRoleSelection={handleRoleSelection}
       />
       <Table country={country} role={role} />
-      <Chart role={role} />
+      <Chart country={country} role={role} />
     </div>
   );
 }
