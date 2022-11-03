@@ -23,8 +23,6 @@ function TopBar(props) {
       </select>
       <select className={style.select} onChange={props.onRoleSelection}>
         <option value="frontend">Frontend</option>
-        <option value="backend">Backend</option>
-        <option value="fullstack">Fullstack</option>
         <option value="ios">IOS</option>
       </select>
       <span className={style.money}>💸</span>
