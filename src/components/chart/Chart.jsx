@@ -3,7 +3,7 @@ import { data } from "../../data/data";
 import { useEffect, useState } from "react";
 import { calcAvg } from "../../utilities/average";
 
-function Chart({ country, role }) {
+function Chart({ role }) {
   const [countriesData, setCountriesData] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function Chart({ country, role }) {
       });
     }
     setCountriesData(tmp);
-  }, [country, role]);
+  }, [role]);
 
   return (
     <div className={style.chart}>
